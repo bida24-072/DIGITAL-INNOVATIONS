@@ -1004,3 +1004,29 @@ footer {
     .marquee-track { animation: none; }
     .reveal { opacity: 1; transform: none; transition: none; }
 }
+/* ============================================
+   SERVICE PRICING
+============================================ */
+.service-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+.service-price .from {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.service-price .amount {
+    font-family: var(--display);
+    font-size: 1.9rem;
+    color: var(--green);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    font-style: italic;
+}
