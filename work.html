@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work — Digital Innovations</title>
+    <meta name="description" content="Websites, apps, business systems, and digital products built by Digital Innovations.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo"><span class="logo-mark">DI</span>Digital <span>Innovations</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="work.html" class="active">Work</a>
+                <a href="process.html">Process</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html" class="nav-cta">Start a Project <i class="fas fa-arrow-right"></i></a>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container">
+                <span class="section-label">Our Work</span>
+                <h1>Real projects.<br><em>Real results.</em></h1>
+                <p>Websites, business systems, apps, dashboards, and digital products we've designed and shipped. Every project below is live and working.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+
+                <div class="work-filters">
+                    <button class="work-filter active" onclick="filterWork('all', this)">All</button>
+                    <button class="work-filter" onclick="filterWork('website', this)">Websites</button>
+                    <button class="work-filter" onclick="filterWork('system', this)">Business Systems</button>
+                    <button class="work-filter" onclick="filterWork('app', this)">Apps</button>
+                    <button class="work-filter" onclick="filterWork('template', this)">Templates</button>
+                    <button class="work-filter" onclick="filterWork('brand', this)">Brand & Design</button>
+                </div>
+
+                <div class="work-grid">
+
+                    <div class="work-card reveal" data-category="app">
+                        <div class="work-visual"><span class="work-badge">Featured</span>💳</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>PulaTrack</h3>
+                                <div class="work-tags">Web App · Finance · Data</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="website brand">
+                        <div class="work-visual"><span class="work-badge">Featured</span>📊</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Pula Report</h3>
+                                <div class="work-tags">Data Media · Brand · Editorial</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="website">
+                        <div class="work-visual">🛍️</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Maatla Boutique</h3>
+                                <div class="work-tags">E-Commerce · Cart · WhatsApp</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="website">
+                        <div class="work-visual">🍽️</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Phakalane Restaurant</h3>
+                                <div class="work-tags">Hospitality · Menu · Reservations</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="website brand">
+                        <div class="work-visual">👗</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Mosadi Clothing Studios</h3>
+                                <div class="work-tags">Fashion · E-Commerce · Brand</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="website">
+                        <div class="work-visual">🏨</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Mokoba Lodge & Restaurant</h3>
+                                <div class="work-tags">Hospitality · Booking · Menu</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="website">
+                        <div class="work-visual">🚗</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Drive With Waboraro</h3>
+                                <div class="work-tags">Education · Quiz · Study Guide</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="website">
+                        <div class="work-visual">💨</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>VAPID Vape Store</h3>
+                                <div class="work-tags">Retail · Age Gate · Filters</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="system">
+                        <div class="work-visual">🏪</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Retail POS System</h3>
+                                <div class="work-tags">Business System · Sales · Inventory</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="system">
+                        <div class="work-visual">📦</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Inventory Tracker</h3>
+                                <div class="work-tags">Business System · Stock · Reports</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="system">
+                        <div class="work-visual">📅</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Salon Booking System</h3>
+                                <div class="work-tags">Bookings · Staff · Notifications</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="system">
+                        <div class="work-visual">🧾</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Invoicing Tool</h3>
+                                <div class="work-tags">Business System · PDF · Payments</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="app">
+                        <div class="work-visual">📱</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Kasi Delivery App</h3>
+                                <div class="work-tags">Mobile · Orders · Tracking</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="app">
+                        <div class="work-visual">🎓</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Student Study App</h3>
+                                <div class="work-tags">Education · Quizzes · Notes</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="template">
+                        <div class="work-visual">🎨</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Boutique Website Template</h3>
+                                <div class="work-tags">Template · E-Commerce · Responsive</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="template">
+                        <div class="work-visual">🍴</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Restaurant Template</h3>
+                                <div class="work-tags">Template · Menu · Reservations</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="template">
+                        <div class="work-visual">💼</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Portfolio Template</h3>
+                                <div class="work-tags">Template · Minimal · Responsive</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" data-category="brand">
+                        <div class="work-visual">✏️</div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Brand Identity Pack</h3>
+                                <div class="work-tags">Logo · Palette · Guidelines</div>
+                            </div>
+                            <div class="work-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="text-align: center; margin-top: 60px;">
+                    <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline">
+                        View GitHub <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Want to see your<br>project here?</h2>
+                <p>Every product on this page started as a conversation. Let's have one about yours.</p>
+                <a href="contact.html" class="btn">Start a Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Digital <span>Innovations</span></h3>
+                    <p>A Botswana-based digital studio. We build websites, business systems, apps, and products that help ambitious businesses grow.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Websites</a></li>
+                        <li><a href="services.html">Business Systems</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">Dashboards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Gaborone, Botswana</li>
+                        <li>hello@digitalinnovations.co.bw</li>
+                        <li>+267 71 234 567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Digital Innovations</span>
+                <span>Built in Botswana 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
