@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Digital Innovations</title>
+    <meta name="description" content="Start a project with Digital Innovations — websites, business systems, apps, and digital products.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo"><span class="logo-mark">DI</span>Digital <span>Innovations</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="work.html">Work</a>
+                <a href="process.html">Process</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <a href="contact.html" class="nav-cta">Start a Project <i class="fas fa-arrow-right"></i></a>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container">
+                <span class="section-label">Get in Touch</span>
+                <h1>Let's build<br><em>something real.</em></h1>
+                <p>Tell us what you're working on. We'll reply within 24 hours with a clear next step.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="contact-grid">
+
+                    <div>
+                        <span class="section-label">Contact</span>
+                        <h2 style="font-family: var(--display); font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1; margin-bottom: 20px;">Direct<br><em style="font-style: italic; color: var(--green);">channels.</em></h2>
+                        <p style="color: var(--muted); font-size: 1rem; line-height: 1.7;">The fastest way to reach us is WhatsApp. For project enquiries, use the form on the right — we'll reply within 24 hours.</p>
+
+                        <div class="contact-channels">
+                            <a href="https://wa.me/26771234567" target="_blank" rel="noopener" class="contact-channel">
+                                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>+267 71 234 567 · Fastest reply</p>
+                                </div>
+                            </a>
+                            <a href="mailto:hello@digitalinnovations.co.bw" class="contact-channel">
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>hello@digitalinnovations.co.bw</p>
+                                </div>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-channel">
+                                <div class="icon"><i class="fab fa-instagram"></i></div>
+                                <div>
+                                    <h4>Instagram</h4>
+                                    <p>@digitalinnovations</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener" class="contact-channel">
+                                <div class="icon"><i class="fab fa-github"></i></div>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <p>View our code & templates</p>
+                                </div>
+                            </a>
+                            <div class="contact-channel">
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Studio</h4>
+                                    <p>Gaborone, Botswana</p>
+                                </div>
+                            </div>
+                            <div class="contact-channel">
+                                <div class="icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h4>Hours</h4>
+                                    <p>Mon–Fri · 9AM–6PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <span class="section-label">Start a Project</span>
+                        <h3>Tell us what you're working on.</h3>
+                        <form onsubmit="submitContact(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="c-name">Your Name</label>
+                                    <input type="text" id="c-name" required placeholder="e.g. Kabelo M.">
+                                </div>
+                                <div class="form-group">
+                                    <label for="c-email">Email</label>
+                                    <input type="email" id="c-email" required placeholder="you@example.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="c-phone">Phone / WhatsApp</label>
+                                    <input type="tel" id="c-phone" placeholder="+267 ...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="c-service">What do you need?</label>
+                                    <select id="c-service" required>
+                                        <option value="">Select...</option>
+                                        <option>Website</option>
+                                        <option>Business System</option>
+                                        <option>Mobile App</option>
+                                        <option>Dashboard / Data</option>
+                                        <option>Brand & Graphic Design</option>
+                                        <option>Template Customisation</option>
+                                        <option>Not sure yet</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="c-budget">Budget Range (Optional)</label>
+                                <select id="c-budget">
+                                    <option value="">Select...</option>
+                                    <option>Under P5,000</option>
+                                    <option>P5,000 – P15,000</option>
+                                    <option>P15,000 – P50,000</option>
+                                    <option>P50,000+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="c-message">Project Details</label>
+                                <textarea id="c-message" rows="5" required placeholder="Tell us what you're trying to build, who it's for, and what success looks like."></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%; justify-content: center;">
+                                Send Enquiry <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <p style="text-align: center; margin-top: 16px; color: var(--muted); font-size: 0.82rem;">
+                                We reply within 24 hours.
+                            </p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Prefer to talk<br>right now?</h2>
+                <p>Message us on WhatsApp — it's the fastest way to reach a real person.</p>
+                <a href="https://wa.me/26771234567" target="_blank" rel="noopener" class="btn">
+                    Chat on WhatsApp <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Digital <span>Innovations</span></h3>
+                    <p>A Botswana-based digital studio. We build websites, business systems, apps, and products that help ambitious businesses grow.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="process.html">Process</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Websites</a></li>
+                        <li><a href="services.html">Business Systems</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">Dashboards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Gaborone, Botswana</li>
+                        <li>hello@digitalinnovations.co.bw</li>
+                        <li>+267 71 234 567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Digital Innovations</span>
+                <span>Built in Botswana 🇧🇼</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
